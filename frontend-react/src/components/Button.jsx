@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom'
 
-const Button = ({ text, classNm }) => {
+const Button = ({ text, classNm, url }) => {
   return (
     <>
-      <a className={`btn ${classNm}`}>{text}</a>
+      <Link to={`${url}`} className={`btn ${classNm}`}>{text}</Link>
     </>
   )
 }
